@@ -1,33 +1,31 @@
 # Práctica 5 "NIVEL DE AGUA"
-Se utilizarán leds como guía visual del sensor ultrasónico y se mostrará en la display
+Haremos uso de componentes leds como guía visual del sensor Ultrasónico y se mostrará como un dato más en la pantalla LCD
 
-## Introduccion
+## Introducción
 
-### Descripcion 
+### Descripción 
 
-La display nos mostrará de acuerdo a la guía de los leds el nivel del tanque 
+La pantalla LCD en este caso nos mostrará en su display el nivel de agua con uso de componentes leds como guía visual.
 
 ### Material necesario
 
-- WOKWI
-- Tarjeta ESP32
-- Sensor ultrasonico
-- LCD 16x2 (I2C)
-- 4 led
-- 4 resistencias de 220 homs
-- Símbolo GND
+- Software ```WOKWI```
+- ```Tarjeta ESP32```
+- ```Sensor ultrasonico```
+- ```LCD 16x2 (I2C)```
+- ```4 led (Pueden o no ser del mismo color)```
+- ```4 resistencias (220 Ohms)```
+- ```Símbolo GND (Tierra)```
 
 ## Instrucciones
 
 ### Requisitos previos 
 
-Para poder usar este repositorio deberás entrar a la plataforma WOKWI
-
-https://wokwi.com/
+Para el uso y operación de esta práctica es necesario el software ```WOKWI``` con el que ya hemos trabajado con anterioridad
 
 ### Instrucciones de prepracion de entorno
 
-1. Abrir la terminal de programación y colocar las siguientes líneas
+1. El primer paso será abrir la terminal de programación dentro del software e insertar las siguientes líneas de código:
 
 ```
 // defines pins numbers
@@ -200,36 +198,40 @@ Serial.println(distance);
 delay (2000);
 }
 ```
-2.Instalar la librería LiquidCrystal I2C como se muestra en la siguiente imagen
+2. Después procederemos a instalar la librería ```LiquidCrystal I2C``` como se observa aqui debajo:
 
-![image](https://github.com/user-attachments/assets/cd10587a-3148-4899-b414-56133ed7e439)
+![]()
 
+3. A continuación vamos insertar y después haremos la conexión del componente ```HC-SR04 ULTRASONIC Distance sensor``` con la tarjeta ```ESP32```:
 
-3.Hacer la conexión como se muestra en la siguiente imagen
+![]()
 
-![image](https://github.com/user-attachments/assets/2bc12fbd-0b65-4777-bb81-1ac1240fddea)
+4. Procederemos a crear la conexion entre la pantalla ```LCD I2C``` con la tarjeta ```ESP32```:
+
+![]()
+
 
 ## Instrucciones de operacion
-1.Iniciar el simulador
+1. El primer pasó será ejecutar el software de simulación ```WOKWI```
 
-2.Visualizar los datos en la LCD
+2. Después se tendrán que observar los datos en la pantalla LCD (I2C) cada cierto intervalo de tiempo
 
-3.Colocar la distancia dando doble click en el sensor ultrasonico 
+3. Lo siguiente será variar la distancia dando doble click al sensor Ultrasonico para darle distintos valores y ver el cambio
 
-4.Dependiendo de las condiciones de distancia que se dieron en el if irán encenciendo los leds y se mostrará en el display el nivel
+4. Por último deberemos declarar con antelación las condiciones de distancia que se dieron en el código principal, por lo cuál irán encenciendo los leds y se mostrará en la pantalla el valor del nivel a la par
 
 ## Resultados
 Cuando haya funcionado el display te mandará las siguientes imagenes en retardos de dos segundos
 
-![image](https://github.com/user-attachments/assets/cc39a02b-7075-4186-9aa5-0b9dd40238fd)
+![]()
 
-![image](https://github.com/user-attachments/assets/af8cf491-a45d-4251-8ecd-4af5b0b972dc)
+![]()
 
-![image](https://github.com/user-attachments/assets/c9f2ebdc-c1bc-4ea3-9b7d-99cc744d3d58)
+![]()
 
-![image](https://github.com/user-attachments/assets/648157ff-725e-4e72-8848-825c36cc6b39)
+![]()
 
 ## Créditos
 Creado y desarrollado por **JOSE DAVID AYALA VILLALBA**
 
-(https://github.com/DaybeatAV)
+-[GITHUB](https://github.com/DaybeatAV)
