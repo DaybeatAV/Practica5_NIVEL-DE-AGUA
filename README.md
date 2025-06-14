@@ -1,5 +1,5 @@
 # Práctica 5 "NIVEL DE AGUA"
-Haremos uso de componentes leds como guía visual del sensor Ultrasónico y se mostrará como un dato más en la pantalla LCD
+Haremos uso de componentes leds como guía visual del sensor Ultrasónico y se mostrará como un dato más en la pantalla LCD para marcar un nivel de agua
 
 ## Introducción
 
@@ -216,19 +216,19 @@ delay (2000);
 ```
 2. Después procederemos a instalar la librería ```LiquidCrystal I2C``` como se observa aqui debajo:
 
-![]()
+![](https://github.com/DaybeatAV/Practica5_NIVEL-DE-AGUA/blob/main/Pr%C3%A1ctica%205%20Librer%C3%ADa%20LyquidCrystal%20I2C.png)
 
 3. A continuación vamos insertar y después haremos la conexión del componente ```HC-SR04 ULTRASONIC Distance sensor``` con la tarjeta ```ESP32```:
 
-![]()
+![](https://github.com/DaybeatAV/Practica5_NIVEL-DE-AGUA/blob/main/Pr%C3%A1ctica%205%20Conexi%C3%B3n%20Ultras%C3%B3nico.png)
 
 4. Procederemos a crear la conexion entre la pantalla ```LCD I2C``` con la tarjeta ```ESP32```:
 
-![]()
+![](https://github.com/DaybeatAV/Practica5_NIVEL-DE-AGUA/blob/main/Pr%C3%A1ctica%205%20Conexi%C3%B3n%20LCD%20(I2C).png)
 
 5. Lo siguiente será insertar y realizar la conexión de los componentes ```leds``` junto a la ```resistencias de 200 Ohms``` con la tarjeta ```ESP32```:
 
-![]()
+![](https://github.com/DaybeatAV/Practica5_NIVEL-DE-AGUA/blob/main/Pr%C3%A1ctica%205%20Conexi%C3%B3n%20LEDs%20y%20Resistencias.png)
 
 ## Instrucciones de operacion
 1. El primer pasó será ejecutar el software de simulación ```WOKWI```
@@ -240,15 +240,13 @@ delay (2000);
 4. Por último deberemos declarar con antelación las condiciones de distancia que se dieron en el código principal, por lo cuál irán encenciendo los leds y se mostrará en la pantalla el valor del nivel a la par
 
 ## Resultados
-Cuando haya funcionado el display te mandará las siguientes imagenes en retardos de dos segundos
+Al final cuando la práctica esté realizada correctamente arrojará resultado cada cierto intervalo de tiempo:
 
-![]()
+![](https://github.com/DaybeatAV/Practica5_NIVEL-DE-AGUA/blob/main/Pr%C3%A1ctica%205%20Resultado%20final.png)
 
-![]()
+## Evidencias
 
-![]()
-
-![]()
+https://github.com/user-attachments/assets/5a3805d4-cc3f-44bf-93e1-153c5b600b56
 
 ## Créditos
 Creado y desarrollado por **JOSE DAVID AYALA VILLALBA**
