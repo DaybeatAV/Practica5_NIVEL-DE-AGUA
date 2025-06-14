@@ -82,26 +82,30 @@ if (safetyDistance>=10 && safetyDistance<=98)
   digitalWrite(led2, LOW);
   digitalWrite(led3, LOW);
   digitalWrite(led4, LOW);
-   lcd.setCursor(0, 0);
-  lcd.print("Diplomado");
-  lcd.setCursor(0, 1);
-  lcd.print("Automatizacion");
+
+  lcd.setCursor(4, 0);
+  lcd.print("DIPLOMADO");
+  lcd.setCursor(2, 1);
+  lcd.print("AUTOMATIZACION");
   delay (2000);
   lcd.clear();
-  lcd.setCursor(0, 0);
-  lcd.print("Irving Cardoso");
-  lcd.setCursor(0, 1);
-  lcd.print("Ing Mecanica");
+
+  lcd.setCursor(1, 0);
+  lcd.print("JOSE DAVID A.V");
+  lcd.setCursor(4, 1);
+  lcd.print("MECANICA");
   delay (2000);
   lcd.clear();
-  lcd.setCursor(0, 0);
-  lcd.print("  07/06/2025");
+
+  lcd.setCursor(3, 0);
+  lcd.print("07/06/2025");
   delay (2000);
   lcd.clear();
-  lcd.setCursor(0,0);
+
+  lcd.setCursor(2,0);
   lcd.print("Distancia: "+ String (distance)+"cm");
-  lcd.setCursor(0,1);
-  lcd.print("Nivel 1/4");
+  lcd.setCursor(2,1);
+  lcd.print("Nivel al 25%");
   delay(2000);          
   lcd.clear();
 }
@@ -111,26 +115,30 @@ else if(safetyDistance>=99 && safetyDistance<=198)
   digitalWrite(led2, HIGH);
   digitalWrite(led3, LOW);
   digitalWrite(led4, LOW);
-     lcd.setCursor(0, 0);
-  lcd.print("Diplomado");
-  lcd.setCursor(0, 1);
-  lcd.print("Automatizacion");
+
+  lcd.setCursor(4, 0);
+  lcd.print("DIPLOMADO");
+  lcd.setCursor(2, 1);
+  lcd.print("AUTOMATIZACION");
   delay (2000);
   lcd.clear();
-  lcd.setCursor(0, 0);
-  lcd.print("Irving Cardoso");
-  lcd.setCursor(0, 1);
-  lcd.print("Ing Mecanica");
+
+  lcd.setCursor(1, 0);
+  lcd.print("JOSE DAVID A.V");
+  lcd.setCursor(4, 1);
+  lcd.print("MECANICA");
   delay (2000);
   lcd.clear();
-  lcd.setCursor(0, 0);
-  lcd.print("  07/06/2025");
+
+  lcd.setCursor(3, 0);
+  lcd.print("07/06/2025");
   delay (2000);
   lcd.clear();
-  lcd.setCursor(0,0);
+
+  lcd.setCursor(2,0);
   lcd.print("Distancia: "+ String (distance)+"cm");
-  lcd.setCursor(0,1);
-  lcd.print("Nivel 1/2");
+  lcd.setCursor(2,1);
+  lcd.print("Nivel al 50%");
   delay(2000);          
   lcd.clear();
 }
@@ -140,26 +148,30 @@ else if (safetyDistance>=199 && safetyDistance<=298)
   digitalWrite(led2, HIGH);
   digitalWrite(led3, HIGH);
   digitalWrite(led4, LOW);
-     lcd.setCursor(0, 0);
-  lcd.print("Diplomado");
-  lcd.setCursor(0, 1);
-  lcd.print("Automatizacion");
+
+  lcd.setCursor(4, 0);
+  lcd.print("DIPLOMADO");
+  lcd.setCursor(2, 1);
+  lcd.print("AUTOMATIZACION");
   delay (2000);
   lcd.clear();
-  lcd.setCursor(0, 0);
-  lcd.print("Irving Cardoso");
-  lcd.setCursor(0, 1);
-  lcd.print("Ing Mecanica");
+
+  lcd.setCursor(1, 0);
+  lcd.print("JOSE DAVID A.V");
+  lcd.setCursor(4, 1);
+  lcd.print("MECANICA");
   delay (2000);
   lcd.clear();
-  lcd.setCursor(0, 0);
-  lcd.print("  07/06/2025");
+
+  lcd.setCursor(3, 0);
+  lcd.print("07/06/2025");
   delay (2000);
   lcd.clear();
-  lcd.setCursor(0,0);
+
+  lcd.setCursor(2,0);
   lcd.print("Distancia: "+ String (distance)+"cm");
-  lcd.setCursor(0,1);
-  lcd.print("Nivel 3/4");
+  lcd.setCursor(2,1);
+  lcd.print("Nivel al 75%");
   delay(2000);          
   lcd.clear();
 }
@@ -169,26 +181,30 @@ else if (safetyDistance>=299 && safetyDistance<=398)
   digitalWrite(led2, HIGH);
   digitalWrite(led3, HIGH);
   digitalWrite(led4, HIGH);
-     lcd.setCursor(0, 0);
-  lcd.print("Diplomado");
-  lcd.setCursor(0, 1);
-  lcd.print("Automatizacion");
+
+lcd.setCursor(4, 0);
+  lcd.print("DIPLOMADO");
+  lcd.setCursor(2, 1);
+  lcd.print("AUTOMATIZACION");
   delay (2000);
   lcd.clear();
-  lcd.setCursor(0, 0);
-  lcd.print("Irving Cardoso");
-  lcd.setCursor(0, 1);
-  lcd.print("Ing Mecanica");
+
+  lcd.setCursor(1, 0);
+  lcd.print("JOSE DAVID A.V");
+  lcd.setCursor(4, 1);
+  lcd.print("MECANICA");
   delay (2000);
   lcd.clear();
-  lcd.setCursor(0, 0);
-  lcd.print("  07/06/2025");
+
+  lcd.setCursor(3, 0);
+  lcd.print("07/06/2025");
   delay (2000);
   lcd.clear();
-  lcd.setCursor(0,0);
+
+  lcd.setCursor(2,0);
   lcd.print("Distancia: "+ String (distance)+"cm");
-  lcd.setCursor(0,1);
-  lcd.print("Nivel lleno");
+  lcd.setCursor(2,1);
+  lcd.print("Nivel al 100%");
   delay(2000);          
   lcd.clear();
 }
@@ -210,6 +226,9 @@ delay (2000);
 
 ![]()
 
+5. Lo siguiente será insertar y realizar la conexión de los componentes ```leds``` junto a la ```resistencias de 200 Ohms``` con la tarjeta ```ESP32```:
+
+![]()
 
 ## Instrucciones de operacion
 1. El primer pasó será ejecutar el software de simulación ```WOKWI```
